@@ -1,0 +1,122 @@
+:root {
+  /* Primary */
+  /* active input border */
+  --primary-Light-purple: hsl(249, 99%, 64%);
+  --primary-Dark-purple:  hsl(278, 94%, 30%);
+  /* input errors */
+  --primary-Red: hsl(0, 100%, 66%);
+
+  /* Neutral */
+  --neutral-White: hsl(0, 0%, 100%);
+  --neutral-Light-grayish-violet: hsl(270, 3%, 87%);
+  --neutral-Dark-grayish-violet: hsl(279, 6%, 55%);
+  --neutral-Very-dark-violet: hsl(278, 68%, 11%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Space Grotesk', sans-serif;  
+}
+
+p {
+  font-size: 18px;
+}
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.card {
+  position: absolute;
+}
+
+.container-left {
+  width: 30%;
+  background-image: linear-gradient(var(--primary-Dark-purple), var(--primary-Light-purple), var(--primary-Dark-purple));
+}
+
+.container-right {    
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  background-color: var(--neutral-White);
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 350px;  
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+  color: var(--neutral-Very-dark-violet);
+}
+
+input {
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  border: solid 1px var(--neutral-Light-grayish-violet);  
+}
+
+.card-data-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-data { 
+  display: block; 
+}
+
+input#month {
+  width: 50px;
+}
+
+input#year {
+  width: 50px;
+}
+
+input#ccv {  
+  width: 150px;
+}
+
+::-webkit-input-placeholder {
+  color: var(--neutral-Light-grayish-violet);
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: var(--neutral-Light-grayish-violet);  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: var(--neutral-Light-grayish-violet);  
+}
+
+:-ms-input-placeholder {  
+  color: var(--neutral-Light-grayish-violet);  
+}
+
+button {
+  padding: 10px;
+  background-color: var(--neutral-Very-dark-violet);
+  border-radius: 5px;
+  color: var(--neutral-White);
+  margin: 20px 0 20px 0;
+}
