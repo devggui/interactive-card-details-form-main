@@ -37,25 +37,27 @@
     <div class="container-right">
       <div class="content">
         <div class="box">
-          <label for="card-holder-name">Cardholder Name</label>
-          <input oninput="getKeyPressValue()" type="text" id="card-holder-name" placeholder="e.g. Jane Appleseed" name="name">
-      
-          <label for="number">Card Number</label>
-          <input oninput="getKeyPressValue()" type="text" id="card-number" placeholder="e.g. 1234 5678 9123 0000" name="number">
-          
-          <div class="card-data-row">
-            <div class="card-data">
-              <label for="month">Exp. Date (MM/YY)</label>
-              <input oninput="getKeyPressValue()" type="text" id="month" placeholder="MM">
-              <input oninput="getKeyPressValue()" type="text" id="year" placeholder="YY">  
+          <form>
+            <label for="card-holder-name">Cardholder Name</label>
+            <input oninput="getKeyPressValue()" type="text" id="card-holder-name" placeholder="e.g. Jane Appleseed" name="name" required>
+        
+            <label for="number">Card Number</label>
+            <input oninput="getKeyPressValue()" type="text" id="card-number" placeholder="e.g. 1234 5678 9123 0000" name="number" pattern="[0-9]+$" required>            
+            
+            <div class="card-data-row">
+              <div class="card-data">
+                <label for="month">Exp. Date (MM/YY)</label>
+                <input oninput="getKeyPressValue()" type="text" id="month" placeholder="MM" required>                
+                <input oninput="getKeyPressValue()" type="text" id="year" placeholder="YY" required>                  
+              </div>
+              <div class="car-data">      
+                <label for="">CCV</label>      
+                <input oninput="getKeyPressValue()" type="text" id="ccv" placeholder="e.g. 123" name="cvc" required>         
+              </div>
             </div>
-            <div class="car-data">      
-              <label for="">CCV</label>      
-              <input oninput="getKeyPressValue()" type="text" id="ccv" placeholder="e.g. 123" name="cvc">         
-            </div>
-          </div>
-          
-          <button>Confirm</button>
+            
+            <button>Confirm</button>
+          </form>
         </div>
       </div>
       <div class="attribution">

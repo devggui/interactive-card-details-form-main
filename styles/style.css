@@ -129,6 +129,12 @@ p {
   width: 350px;  
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  width: 350px;  
+}
+
 label {
   display: block;
   margin-top: 20px;
@@ -141,6 +147,27 @@ input {
   margin-top: 10px;
   border: solid 1px var(--neutral-Light-grayish-violet);  
 }
+
+input:focus {
+  border: 1px solid hsl(278, 94%, 30%);     
+  outline: none;
+}
+
+/* Module Errors */
+.error {
+  color: var(--primary-Red);
+  display: none;
+  font-size: 0.8em;
+}
+
+.error.visible {
+  display: block;
+}
+
+input.invalid {
+  border-color: hsl(0, 100%, 66%);
+}
+/* End Module Errors */
 
 .card-data-row {
   display: flex;

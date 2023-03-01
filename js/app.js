@@ -5,17 +5,15 @@ function getKeyPressValue() {
   const cardmonth = document.getElementById('month').value;
   const cardyear = document.getElementById('year').value;
   const cardcvc = document.getElementById('ccv').value;
-  
-  console.log(cardnumber);
 
-  // document.getElementById(' card-front-number').innerHTML = cardnumber; 
+  console.log(cardnumber);
 
   if(cardname == '') {
     document.getElementById('card-front-name').innerHTML = 'Jane Appleseed';  
   } else {
     document.getElementById('card-front-name').innerHTML = cardname; 
   }
- 
+
   if(cardnumber == '') {
     document.getElementById('card-front-number').innerHTML = '0000 0000 0000 0000';  
   } else {
@@ -34,6 +32,4 @@ function getKeyPressValue() {
     document.getElementById('card-back-ccv').innerHTML = cardcvc;
   }
 }
-
-
 
