@@ -36,8 +36,9 @@
 
     <div class="container-right">
       <div class="content">
-        <div class="box">
-          <form>
+
+        <div class="box" id="box">
+          <form action="javascript:submit()">
             <label for="card-holder-name">Cardholder Name</label>
             <input oninput="getKeyPressValue()" type="text" id="card-holder-name" placeholder="e.g. Jane Appleseed" name="name" required>
         
@@ -56,23 +57,23 @@
               </div>
             </div>
             
-            <button>Confirm</button>
+            <button type="submit">Confirm</button>
           </form>
         </div>
+
+        <div class="success" style="display: none;" id="success">
+          <img src="./images/icon-complete.svg" class="logo-completed" alt="Icone redondo com um 'Certo' no meio para indicar escrito Thank you! para indicar que foi finalizado com sucesso.">
+          <h1>THANK YOU!</h1>
+          <p>We've added your card details</p>
+          <button onclick="back()">Continue</button>
+        </div>
+
       </div>
       <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
         Coded by <a href="#">Guilherme Silva (devggui)</a>.
       </div>
-
     </div>    
-
-    <!-- Completed state start -->
-    <!-- <div class="success">
-      Thank you!
-      We've added your card details
-      Continue
-    </div> -->
 
   <script src="./js/app.js"></script>
   </div>  

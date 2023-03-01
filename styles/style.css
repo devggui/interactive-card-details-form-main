@@ -10,14 +10,17 @@
   --neutral-White: hsl(0, 0%, 100%);
   --neutral-Light-grayish-violet: hsl(270, 3%, 87%);
   --neutral-Dark-grayish-violet: hsl(279, 6%, 55%);
-  --neutral-Very-dark-violet: hsl(278, 68%, 11%);
+  --neutral-Very-dark-violet: hsl(278, 64%, 11%);
 }
 
 * {
   margin: 0;
   padding: 0;
-  text-decoration: none;
-  font-family: 'Space Grotesk', sans-serif;  
+  text-decoration: none;   
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif; 
 }
 
 p {
@@ -42,7 +45,8 @@ p {
 .container-left {  
   width: 30%;  
   min-width: 400px;
-  background-image: url('../images/bg-main-desktop.png');  
+  background-image: url('../images/bg-main-desktop.png');    
+  background-size: cover;
 }
 
 /* Card Module */
@@ -153,22 +157,6 @@ input:focus {
   outline: none;
 }
 
-/* Module Errors */
-.error {
-  color: var(--primary-Red);
-  display: none;
-  font-size: 0.8em;
-}
-
-.error.visible {
-  display: block;
-}
-
-input.invalid {
-  border-color: hsl(0, 100%, 66%);
-}
-/* End Module Errors */
-
 .card-data-row {
   display: flex;
   justify-content: space-between;
@@ -212,4 +200,47 @@ button {
   border-radius: 5px;
   color: var(--neutral-White);
   margin: 20px 0 20px 0;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(33, 10, 46, 0.9);
+}
+
+.success {  
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.logo-completed {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.success > h1 {
+  margin-bottom: 15px;
+  color: rgb(26, 8, 39);
+}
+
+.success > p {
+  color: rgb(156, 152, 157)
+}
+
+.success > button {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--neutral-Very-dark-violet);
+  border-radius: 5px;
+  color: var(--neutral-White);
+  margin: 40px 0 20px 0;
+  cursor: pointer;
+}
+
+.success > button {
+  background-color: rgba(33, 10, 46, 0.9); 
 }

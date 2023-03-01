@@ -33,3 +33,20 @@ function getKeyPressValue() {
   }
 }
 
+function submit() {  
+  const box = document.getElementById('box');
+  const success = document.getElementById('success');
+  
+  if(box.style.display == 'block') {
+    box.style.display = 'none';
+    success.style.display = 'block';
+  } else {
+    box.style.display = 'block';
+    success.style.display = 'none';
+  }
+
+}
+
+function back() {
+  window.location.reload(true);
+}
