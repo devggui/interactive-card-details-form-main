@@ -40,8 +40,9 @@ p {
 }
 
 .container-left {  
-  width: 30%;
-  background-image: url('../images/bg-main-desktop.png');
+  width: 30%;  
+  min-width: 400px;
+  background-image: url('../images/bg-main-desktop.png');  
 }
 
 /* Card Module */
@@ -85,6 +86,7 @@ p {
 
 .logo {
   margin-left: 25px;  
+  background-repeat: no-repeat;
 }
 
 /* Card Back */
@@ -115,6 +117,7 @@ p {
   display: flex;
   flex-direction: column;
   width: 70%;
+  min-width: 1000px;
   background-color: rgb(255, 255, 255);
   align-items: center;
   justify-content: center;
