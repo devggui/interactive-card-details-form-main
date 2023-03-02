@@ -42,8 +42,61 @@ p {
   display: flex;
 }
 
+.card-front {
+  width: 80%;  
+}
+
+@media (max-width: 375px) {
+  p {
+    font-size: 14px;
+  }
+
+  .container {        
+    flex-direction: column;      
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .container-left {
+    max-width: 374px !important;
+    height: 100vh;
+    margin-bottom: 80px;
+  }
+
+  .logo {
+   width: 70px !important;
+  }
+
+  .card-front {
+    width: 270px !important;
+    height: 150px !important;
+    top: 120px !important;
+    left: 40px !important;
+    z-index: 1;
+    background-size: 270px 150px;
+  }
+
+  .card-back {
+    width: 270px !important;
+    height: 150px !important;
+    top: 20px !important;
+    left: 80px !important;
+    background-size: 270px 150px;
+  }
+
+  .card-front-number {
+    font-size: 18px !important;      
+  }
+
+  .container-right {
+    max-width: 374px !important;
+  }
+}
+
 .container-left {  
-  width: 30%;  
+  width: 30%;
+  max-width: 500px;  
   min-width: 400px;
   background-image: url('../images/bg-main-desktop.png');    
   background-size: cover;

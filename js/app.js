@@ -44,7 +44,6 @@ function submit() {
     box.style.display = 'block';
     success.style.display = 'none';
   }
-
 }
 
 function back() {
